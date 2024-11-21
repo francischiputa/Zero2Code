@@ -51,10 +51,16 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware', 
 ]
 
 CORS_ALLOWED_ORIGINS = [
     'https://jampass.pro',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://jampass.pro',  # Add your domain
+    'https://www.jampass.pro',  # Add with "www" if applicable
 ]
 
 
