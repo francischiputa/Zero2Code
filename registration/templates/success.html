@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfully Registered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="{% static 'img/Black.png'%}">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css"> <!-- We add the output Tailwind CSS here -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+              extend: {
+                colors: {
+                  primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
+                }
+              },
+              fontFamily: {
+              'body': [
+              'Inter', 
+              'ui-sans-serif', 
+              'system-ui', 
+              '-apple-system', 
+              'system-ui', 
+              'Segoe UI', 
+              'Roboto', 
+              'Helvetica Neue', 
+              'Arial', 
+              'Noto Sans', 
+              'sans-serif', 
+              'Apple Color Emoji', 
+              'Segoe UI Emoji', 
+              'Segoe UI Symbol', 
+              'Noto Color Emoji'
+            ],
+                'sans': [
+              'Inter', 
+              'ui-sans-serif', 
+              'system-ui', 
+              '-apple-system', 
+              'system-ui', 
+              'Segoe UI', 
+              'Roboto', 
+              'Helvetica Neue', 
+              'Arial', 
+              'Noto Sans', 
+              'sans-serif', 
+              'Apple Color Emoji', 
+              'Segoe UI Emoji', 
+              'Segoe UI Symbol', 
+              'Noto Color Emoji'
+            ]
+              }
+            }
+          }
+      </script>
+
+      <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 9s ease infinite;
+            height: 100vh;
+          }
+          
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+          
+
+
+      </style>
+</head>
+
+<body>
+ 
+        <div class="w-full h-full flex flex-row gap-6 items-center justify-center px-6 py-8 mx-auto lg:py-0">
+
+            <div class="max-w-sm rounded py-4 px-6 mt-6 my-6 overflow-hidden shadow-lg">
+               
+                <div class="px-6">
+                 <div class="font-bold text-xl flex justify-center items-center mb-2">
+                 <img class="w-40 h-40" src="{% static 'img/zero2code-logo.png' %}" alt="success-logo">
+                  </div>
+                 <div class="font-bold text-xl flex justify-center items-center mb-2">
+                    <img class="w-20 h-20" src="{% static 'img/check-mark-circle-svgrepo-com.svg' %}" alt="success-logo">
+                 </div>
+                  <p class="text-white text-center p-3 text-base">
+                    Thank you For Registering For Zero2Code Bootcamp! 
+                  </p>
+                  <p class="text-white text-center p-2 text-base">
+                    Email is sent to your email address you have registered with. See you in class.
+                  </p>
+
+                </div>
+                <div class="px-6 pt-4 py-2 my-2 mt-2  pb-2">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#WebDev</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Programming</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Zero2Code</span>
+                </div>
+              </div>
+
+            <div class="w-full  basis-1/2  md:mt-0 sm:max-w-md xl:p-0 ">
+                <img class="mt-12 pt-12" src="{% static 'img/undraw_team.svg' %}" alt="">
+
+
+            </div>
+            
+            
+        </div>
+      
+
+</body>
+</html>
+
