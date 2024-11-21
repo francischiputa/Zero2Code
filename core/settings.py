@@ -50,7 +50,6 @@ MIDDLEWARE = [
 ]
 
 
-
 CORS_ALLOWED_ORIGINS = [
     'https://jampass.pro',
 ]
