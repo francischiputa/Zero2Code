@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'https://jampass.pro']
 
 
 # Application definition
