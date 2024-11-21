@@ -23,12 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Change to True for development
 
-ALLOWED_HOSTS = ['*', 'https://jampass.pro']
-
-
-# Application definition
+ALLOWED_HOSTS = ['jampass.pro', 'www.jampass.pro', '*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -44,14 +41,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware', 
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -59,8 +54,8 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://jampass.pro',  # Add your domain
-    'https://www.jampass.pro',  # Add with "www" if applicable
+    'https://jampass.pro',
+    'https://www.jampass.pro',
 ]
 
 

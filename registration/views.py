@@ -47,19 +47,19 @@ def RegisterUser(request):
                 fail_silently=False,
                 )
 
-        # try:
-        #        send_mail(
-        #        'Test Subject',
-        #        'This is a test email.',
-        #        settings.DEFAULT_FROM_EMAIL,
-        #        ['recipient@example.com'],
-        #        fail_silently=False,
-        #        )
-        #        print("Email sent successfully!")
-        # except Exception as e:
-        #        print(f"Failed to send email: {e}")
+        try:
+               send_mail(
+               'Test Subject',
+               'This is a test email.',
+               settings.DEFAULT_FROM_EMAIL,
+               ['recipient@example.com'],
+               fail_silently=False,
+               )
+               print("Email sent successfully!")
+        except Exception as e:
+               print(f"Failed to send email: {e}")
 
-        # return render(request, 'success.html')
+        return render(request, 'success.html')
     else:
             messages.error(request, 'Passwords do not match. Try again.')
             return render(request, 'index.html', {
