@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # Change to True for development
+DEBUG = True  # Change to True for development
 
-ALLOWED_HOSTS = ['jampass.pro', 'www.jampass.pro', '*']
+ALLOWED_HOSTS = ['www.zero2code.onrender.com', 'https://zero2code.onrender.com', '*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -117,6 +118,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Enable WhiteNoise compression and caching
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.jampass.pro'  # SMTP server host
