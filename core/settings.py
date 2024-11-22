@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # Change to True for development
 
-ALLOWED_HOSTS = ['zero2code.onrender.com', 'www.zero2code.onrender.com']
+ALLOWED_HOSTS = ['zero2code.onrender.com', 'www.zero2code.onrender.com', '*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
