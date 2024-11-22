@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # Change to True for development
+DEBUG = False  # Change to True for development
 
 ALLOWED_HOSTS = ['zero2code.onrender.com', 'www.zero2code.onrender.com', '*']
 
