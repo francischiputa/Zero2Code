@@ -41,7 +41,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://jampass.pro',
+    'https://zero2code.onrender.com',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
