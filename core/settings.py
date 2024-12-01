@@ -16,6 +16,12 @@ DEBUG = False  # Change to True for development
 
 ALLOWED_HOSTS = ['zero2code.onrender.com', 'www.zero2code.onrender.com', '*']
 
+# Add your domain to CSRF_TRUSTED_ORIGINS
+CSRF_TRUSTED_ORIGINS = [
+    'https://code-register.onrender.com/',
+]
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
