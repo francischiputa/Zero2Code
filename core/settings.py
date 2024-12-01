@@ -51,10 +51,10 @@ CORS_ALLOWED_ORIGINS = [
     'https://zero2code.onrender.com',
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://zero2code.onrender.com',
-    'https://www.zero2code.onrender.com',
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://zero2code.onrender.com',
+#     'https://www.zero2code.onrender.com',
+# ]
 
 
 ROOT_URLCONF = 'core.urls'
