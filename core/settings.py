@@ -14,11 +14,12 @@ SECRET_KEY = 'django-insecure-33*4fp4*$b!#nq@sn3_3*br7y%kmhn)c*f=!sh^-@(cf1=pz&m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False  # Change to True for development
 
-ALLOWED_HOSTS = ['zero2code.onrender.com', 'www.zero2code.onrender.com', '*']
+ALLOWED_HOSTS = ['code-register.onrender.com', 'zero2code.onrender.com', 'www.zero2code.onrender.com', '*']
 
 # Add your domain to CSRF_TRUSTED_ORIGINS
 CSRF_TRUSTED_ORIGINS = [
     'https://code-register.onrender.com/',
+    'https://zero2code.onrender.com/'
 ]
 
 
